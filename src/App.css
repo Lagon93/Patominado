@@ -66,7 +66,8 @@ NAVBAR STYLES
 .navbar ul li {
   margin-left: 20px;
 }   
-.navbar ul li a {
+.navbar ul li a,
+.navbar ul li a:visited {
   color: #525252;
   text-decoration: none;
   transition: color 0.3s;
@@ -74,7 +75,7 @@ NAVBAR STYLES
   font-size: 16px;
   font-weight: 500;
   border: 1px solid transparent;
-
+  display: block;
 }
 .navbar ul li a:hover {
   background-color: #525252;
@@ -126,6 +127,87 @@ Header STYLES
   z-index: 10;
 }
 
+/*###########################
+PAGE STYLES
+#############################*/
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-container h1 {
+  font-size: 48px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.page-container p {
+  font-size: 18px;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*###########################
+COORDINATES STYLES
+#############################*/
+.coords-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.coord-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.coord-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.coord-card h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.coord-card .plane {
+  font-size: 16px;
+  color: #666666;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.coordinates {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.coordinates span {
+  background: rgba(51, 51, 51, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -143,46 +225,17 @@ Header STYLES
   }
 }
 
+.twitch_icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
 /*###########################
 CARD STYLES
 #############################*/
-.card {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  z-index: 1;   
-  max-width: 300px;
-  margin: 20px auto;
-  text-align: left;
-}
-
-.card h2 {
-  margin-top: 0;
-  color: #333333;
-}
-
-.card p {
-  color: #666666;
-  line-height: 1.4;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #525252;
-  text-decoration: none;
-  font-weight: 500;
-}
-.card a:hover {
-  text-decoration: underline;
-}
-
-.card img{
-  width: 20%;
-  border-radius: 10px;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
-}
 
 .stats-grid {
   display: grid;
@@ -195,35 +248,35 @@ CARD STYLES
 }
 
 .stat-card {
-  background: rgba(20, 20, 20, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .stat-label {
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #333333;
   margin-bottom: 0.5rem;
   font-size: larger;
 }
 
 .stat-value {
   font-size: 1.8rem;
-  color: white;
+  color: #2c2c2c;
   font-weight: bold;
   object-fit: contain;
 }
 .count {
   font-size: 1rem;
-  color: #ddd;
+  color: #555555;
   margin-left: 0.5rem;
 }
 
@@ -241,27 +294,30 @@ CARD STYLES
   justify-content: center;
 }
 
-/* 🎨 Colores personalizados */
+/* Colores personalizados */
 .bg-yellow {
-  background: linear-gradient(180deg, #b8860b 0%, #654b00 100%);
+  background: linear-gradient(180deg, #fff2a6 0%, #f0e68c 100%);
 }
 
 .bg-green {
-  background: linear-gradient(180deg, #1d4d1d 0%, #0f2f0f 100%);
+  background: linear-gradient(180deg, #c8e6c9 0%, #a5d6a7 100%);
 }
 
 .bg-blue {
-  background: linear-gradient(180deg, #1a3f6b 0%, #0e1c2f 100%);
+  background: linear-gradient(180deg, #bbdefb 0%, #90caf9 100%);
 }
 .bg-purple {
-  background: linear-gradient(180deg, #6a0dad 0%, #3d0066 100%);
+  background: linear-gradient(180deg, #e1bee7 0%, #ce93d8 100%);
 }
 .bg-red {
-  background: linear-gradient(180deg, #8b0000 0%, #460000 100%);
+  background: linear-gradient(180deg, #ffcdd2 0%, #ef9a9a 100%);
 }
 .bg-orange {
-  background: linear-gradient(180deg, #ff8c00 0%, #6d3803 100%);
+  background: linear-gradient(180deg, #ffe0b2 0%, #ffcc80 100%);
 }
 .bg-teal {
-  background: linear-gradient(180deg, #008080 0%, #004c4c 100%);
+  background: linear-gradient(180deg, #b2dfdb 0%, #80cbc4 100%);
+}
+.bg-pink {
+  background: linear-gradient(180deg, #f8bbd9 0%, #f48fb1 100%);
 }

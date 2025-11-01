@@ -17,7 +17,7 @@ console.log(stats);
   const items = [
     { icon: "/blocks/Bone.png", label: "Muertes", value: stats.muertes, bgClass: "bg-yellow"},
     { icon: "/blocks/Zombie.png", label: "Mobs eliminados", value: stats.mobKills, bgClass: "bg-green" },
-    { icon: "/blocks/Clock.png", label: "Tiempo jugado (min)", value: stats.tiempoJugadoMinutos, bgClass: "bg-blue" },
+    { icon: "/blocks/Clock.png", label: "Tiempo jugado", value: stats.tiempoJugadoMinutos, bgClass: "bg-blue" },
     { icon: "/blocks/Emerald.png", label: "Intercambios realizados", value: stats.tradeos, bgClass: "bg-purple" },
     { icon: "/blocks/Iron_Pickaxe.png", label: "Bloque más minado", value: <>{`${stats.mostMinedBlock.item.toUpperCase().slice(0, 1)}${stats.mostMinedBlock.item.replace(/_/g, ' ').slice(1)} `}<span className="count">{stats.mostMinedBlock.count}</span></>, bgClass: "bg-red" },
     { icon: "/blocks/Iron_Hoe.png", label: "Ítem más usado", value: <>{`${stats.mostUsedItem.item.toUpperCase().slice(0, 1)}${stats.mostUsedItem.item.replace(/_/g, ' ').slice(1)} `}<span className="count">{stats.mostUsedItem.count}</span></>, bgClass: "bg-orange" },

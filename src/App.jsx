@@ -1,17 +1,22 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar'
-import Header from './components/header'
-import Stats from './components/stats.jsx';
+import Home from './pages/Home'
+import Proyectos from './pages/Proyectos'
+import Coordenadas from './pages/Coordenadas'
 
 function App() {
-
-
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
         <Navbar />
-              <Header />
-              <Stats />
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/coordenadas" element={<Coordenadas />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
