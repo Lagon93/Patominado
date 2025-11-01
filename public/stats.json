@@ -1,0 +1,22 @@
+{
+  "mobKills": 662,
+  "muertes": 39,
+  "tiempoJugadoMinutos": 3010,
+  "tradeos": 1912,
+  "mostUsedItem": {
+    "item": "diamond_pickaxe",
+    "count": 22516
+  },
+  "mostCraftedItem": {
+    "item": "iron_ingot",
+    "count": 4137
+  },
+  "mostMinedBlock": {
+    "item": "netherrack",
+    "count": 18022
+  },
+  "mostDroppedItem": {
+    "item": "netherrack",
+    "count": 1120
+  }
+}
