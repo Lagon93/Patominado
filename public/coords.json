@@ -10,12 +10,39 @@
             }
         },
         {
+            "name": "End Ship",
+            "plane": "end",
+            "coords": {
+                "x": 150,
+                "y": 75,
+                "z": 1100
+            }
+        },
+        {
             "name": "Portal Nether",
             "plane": "nether",
             "coords": {
                 "x": -585,
                 "y": 100,
                 "z": 252
+            }
+        },
+        {
+            "name": "Fortress Nether",
+            "plane": "nether",
+            "coords": {
+                "x": -200,
+                "y": 65,
+                "z": 180
+            }
+        },
+        {
+            "name": "Blaze Spawner",
+            "plane": "nether",
+            "coords": {
+                "x": -195,
+                "y": 68,
+                "z": 175
             }
         },
         {
@@ -26,7 +53,33 @@
                 "y": 62,
                 "z": 2282
             }
+        },
+        {
+            "name": "Mina de Diamantes",
+            "plane": "overworld",
+            "coords": {
+                "x": -4520,
+                "y": 12,
+                "z": 2300
+            }
+        },
+        {
+            "name": "Aldea Comerciante",
+            "plane": "overworld",
+            "coords": {
+                "x": -3800,
+                "y": 68,
+                "z": 1950
+            }
+        },
+        {
+            "name": "Portal del End",
+            "plane": "overworld",
+            "coords": {
+                "x": -4680,
+                "y": 25,
+                "z": 2150
+            }
         }
-
     ]
 }
